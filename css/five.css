@@ -1,0 +1,44 @@
+@charset "utf-8";
+html {
+    font-family: Helvetica, Microsoft yahei, Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    height: 100px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000000;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+.button a:hover {
+    color: #FFFFFF;
+}
+
+#myCanvas {
+    background: #FDCCB3;
+    margin: auto;
+    zoom: 0.5;
+}
