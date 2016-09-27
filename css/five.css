@@ -40,5 +40,26 @@ body {
 #myCanvas {
     background: #FDCCB3;
     margin: auto;
-    zoom: 0.5;
+    /* transform: scale(0.5); */
+    /* zoom: 0.5; */
+    /*     -webkit-zoom: 0.5;
+    -ms-zoom: 0.5; */
+    /*     transform: scale(.5);
+    transform-origin: 50% 0%;
+    -ms-transform: scale(.5);
+    /* IE 9 */
+    /* -ms-transform-origin: 50% 0%; */
+    /* IE 9 */
+    /* -webkit-transform: scale(.5); */
+    /* Safari 和 Chrome */
+    /* -webkit-transform-origin: 50% 0%; */
+    /* Safari 和 Chrome */
+    /* -moz-transform: scale(.5); */
+    /* Firefox */
+    /* -moz-transform-origin: 50% 0%; */
+    /* Firefox */
+    /* -o-transform: scale(.5); */
+    /* Opera */
+    /* -o-transform-origin: 50% 0%; */
+    /* Opera */
 }

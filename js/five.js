@@ -15,7 +15,7 @@ window.onload = function() {
     var myChess = function(canvas) {
         this.dom = document.getElementById(canvas);
         this.ctx = this.dom.getContext("2d");
-        this.ctx.scale(2, 2);
+        // this.ctx.scale(2, 2);
         this.a_w = 40;
         this.chessList = [];
         this.count = 0;
@@ -30,12 +30,14 @@ window.onload = function() {
             var domTop = this.dom.offsetTop,
                 domLeft = this.dom.offsetLeft,
                 self = this;
+                console.log(domTop);
+                console.log(domLeft);
             self.playChess(7, 7, 0);
             //计算位置、检查是否有棋、判断谁赢
             this.dom.onclick = function(e) {
                 self.huiqi_flag = 0;
-                var _x = (e.pageX * 2 - domLeft) / 2,
-                    _y = (e.pageY * 2 - domTop) / 2,
+                var _x = (e.pageX - domLeft) ,
+                    _y = (e.pageY - domTop) ,
                     i = Math.round(_x / self.a_w) - 1,
                     j = Math.round(_y / self.a_w) - 1;
                 if (!self.checkIf(i, j)) {
@@ -357,7 +359,7 @@ window.onload = function() {
         var re_button = document.getElementById("reset");
         re_button.onclick = function(e) {
             var board = new myChess("myCanvas");
-            board.ctx.scale(0.5, 0.5);
+            // board.ctx.scale(0.5, 0.5);
             board.init();
         }
     }
